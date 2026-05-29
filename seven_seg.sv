@@ -1,3 +1,15 @@
+/*
+ * Project: 8-bit ALU
+ * Author: Creighton Townsley, Wakana Sakane, Trevor Bahm
+ * Contact: townslcr@oregonstate.edu
+ * Description: Seven segment display decoder for 8-bit ALU.
+ *              Converts a 4-bit hex digit (0-F) to active-low
+ *              7-segment display output.
+ * Sources: Adapted from Harris & Harris "Digital Design and 
+ *          Computer Architecture" Example 4.25 (Page 198)
+ * Date: May 2026
+ */
+
 module seven_seg (
     input  logic [3:0] num,      // 4-bit input
     output logic [6:0] segments  // 7-segment display output
