@@ -23,7 +23,6 @@ Supports 7 operations selected by a 3-bit opcode:
 | 110    | Bitwise OR   |
 
 Files
-
 | File | Description |
 |------|-------------|
 | `alu_top.sv` | Top-level module |
@@ -35,7 +34,9 @@ Files
 | `outputA.sv` | A passthrough |
 | `outputB.sv` | B passthrough |
 | `output_handler.sv` | Enable, reset, 7-seg encoding |
-| `testbench.sv` | Top-level testbench |
+| `seven_seg.sv` | 4-bit hex to 7-segment decoder |
+| `Register.sv` | Parameterized N-bit register |
+| `alu_tb.sv` | Testbench |
 | `alu_tb.do` | ModelSim do file |
 
 *Submitted for ECE 204, Oregon State University, due June 7, 2026.*
