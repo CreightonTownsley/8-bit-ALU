@@ -26,8 +26,8 @@ module opcode_decoder(
     input  logic [7:0] xor_result,
     input  logic [7:0] a_result,
     input  logic [7:0] b_result,
-    input  logic [7:0] add_overflow,  // overflow from add_sub
-    input  logic [7:0] sub_overflow,  // overflow from add_sub
+    input  logic add_overflow,  // overflow from add_sub
+    input  logic sub_overflow,  // overflow from add_sub
     input  logic [2:0] opcode,
     output logic [7:0] result,
     output logic overflow
