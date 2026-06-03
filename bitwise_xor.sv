@@ -8,7 +8,7 @@
  * Date: May 2026
  */
 
-module bitwise_XOR(
+module bitwise_xor(
 	input logic [7:0] a,
 	input logic [7:0] b,
 	output logic [7:0] result
