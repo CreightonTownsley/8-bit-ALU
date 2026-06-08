@@ -29,7 +29,7 @@ module add_sub(
 	assign full_result = {1'b0, a} + {1'b0, b_mod} + op;
 	
 	assign result = full_result[7:0]; // 8 bit result
-	assign overflow = full_result[8]; // Extra 9th bit is overflow
+	assign overflow = full_result[8] ^ op; // Extra 9th bit is overflow
 	
 endmodule
 
